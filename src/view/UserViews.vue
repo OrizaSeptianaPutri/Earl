@@ -5,12 +5,22 @@
 //2. lifecycle dibagi menjadi 4 tipe, yaitu create, mount, updating, dan destruction.
 <script>	
 export default{
-    beforeCreate(){
+    
+
+    //5. State adalah sebuah object dimana tempat semua data aplikasi berada.
+  //state
+  data(){
+    return {
+      user: ""
+    }
+  },
+  beforeCreate(){
         console.log('before create');
         //BEFORECREATE dijalankan pertama kali ketika data belum diinisiasi oleh Vue
     },
     created(){
-        console.log('created');
+        this.user="Oriza Septiana"
+        console.log(this.user)
         //CREATED dieksekusi oleh vue ketika data selesai dijalankan.
     },
     beforeMount(){
@@ -37,6 +47,7 @@ export default{
         console.log('destroy');
         //DESTROYED dijalankan setelah sebuah instance dihapus sepenuhnya
     }
+
+
 }
 </script>
- 
