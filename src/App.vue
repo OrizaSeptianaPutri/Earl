@@ -3,18 +3,23 @@
     <img alt="Vue logo" src="./assets/logo.png">
     <HelloWorld msg="Welcome to Your Vue.js App"/>
     <UserViews/>
+    <LRendering/>
+    <CRender/>
   </div>
 </template>
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
 import UserViews from './view/UserViews.vue'
-
+import LRendering from './view/LRendering.vue'
+import CRender from './view/CRender.vue'
 export default {
   name: 'App',
   components: {
     HelloWorld,
-    UserViews
+    UserViews,
+    LRendering,
+    CRender
   }
 }
 </script>

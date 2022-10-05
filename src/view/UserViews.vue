@@ -1,6 +1,6 @@
 //1. lifecycle adalah serangkaian langkah inisialisasi(nilai untuk mendeklasikan variable/objek) sampai komponen nya berhasil di jalankan.
 <template>
- <h1>USER</h1>
+<h1>{{user}}</h1>
 </template>
 //2. lifecycle dibagi menjadi 4 tipe, yaitu create, mount, updating, dan destruction.
 <script>	
