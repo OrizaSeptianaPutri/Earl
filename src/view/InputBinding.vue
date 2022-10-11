@@ -14,9 +14,9 @@
     <br> <br>
     <span>Bagaimana perasaanmu hari ini :  {{checked}}</span>
     <br> <br>
-    <input type="checkbox" id="Senang" value="Senang" v-model="checked">
+    <input type="checkbox" id="Senang" value="Senang" v-model="checked" name="senang">
     <label for="Senang">Senang</label>
-    <input type="checkbox" id="Sedih" value="Sedih" v-model="checked">
+    <input type="checkbox" id="Sedih" value="Sedih" v-model="unchecked" name="sedih">
     <label for="Sedih">Sedih</label>
     <br>
 
@@ -50,7 +50,8 @@ export default {
         return{
             hallo : ' ',
             pesan:' ',
-            checked:' ',
+            checked:false,
+            unchecked:true,
             picked: ' ',
             selected: ' '
         }

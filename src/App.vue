@@ -7,13 +7,20 @@
   </nav>
   
    <router-view />
+   <PostTest/>
+   <InputBinding/>
   </div>
   
 </template>
 
 <script>
+import PostTest from "./view/PostTest.vue"
+import InputBinding from "./view/InputBinding.vue"
 export default {
-  name: 'App'
+  components: {
+    PostTest,
+    InputBinding
+  }
 }
 
 </script>
