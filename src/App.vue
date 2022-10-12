@@ -8,18 +8,22 @@
   
    <router-view />
    <PostTest/>
-   <InputBinding/>
+   <GetTest/>
+   <DeleteTest/>
   </div>
   
 </template>
 
 <script>
 import PostTest from "./view/PostTest.vue"
-import InputBinding from "./view/InputBinding.vue"
+import GetTest from "./view/GetTest.vue"
+import DeleteTest from "./view/DeleteTest.vue"
+
 export default {
   components: {
     PostTest,
-    InputBinding
+    GetTest,
+    DeleteTest
   }
 }
 

@@ -32,7 +32,7 @@
 		methods: {
 			latihanpost(){
 				axios.post("https://1cd5wupiy7.execute-api.us-east-1.amazonaws.com/users", 
-				{name: this.name, userId: this.ID})
+				{name: this.name, ID: this.ID})
 				.then ((res) => {
 					console.log(res)
 					this.user = res.data.name
