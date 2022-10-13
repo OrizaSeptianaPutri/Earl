@@ -12,7 +12,7 @@ export default {
     },
     mounted(){
         axios
-            .delete('https://1cd5wupiy7.execute-api.us-east-1.amazonaws.com/users/10')
+            .delete('https://1cd5wupiy7.execute-api.us-east-1.amazonaws.com/users/100')
             .then(res =>{
                 console.log(res)
                 this.user = res.data.message

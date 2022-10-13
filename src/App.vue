@@ -8,22 +8,28 @@
   
    <router-view />
    <PostTest/>
-   <GetTest/>
    <DeleteTest/>
+   <Test nama="Oriza"/>
+   <Test :nama="name"/>
   </div>
   
 </template>
 
 <script>
 import PostTest from "./view/PostTest.vue"
-import GetTest from "./view/GetTest.vue"
 import DeleteTest from "./view/DeleteTest.vue"
+import Test from "./view/PropsTest.vue"
 
 export default {
   components: {
     PostTest,
-    GetTest,
-    DeleteTest
+    DeleteTest,
+    Test
+  },
+  data(){
+    return{
+      name:"Icha"
+    }
   }
 }
 
